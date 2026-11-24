@@ -1,6 +1,6 @@
 [project]
 name = "django-modeltranslation"
-dynamic = ["version"]
+version = "0.19.19.post1"
 description = "Translates Django models using a registration approach."
 readme = "README.rst"
 authors = [
@@ -99,7 +99,7 @@ disable_error_code = ["override", "attr-defined", "return-value", "misc"]
 django_settings_module = "modeltranslation.tests.settings"
 
 [build-system]
-requires = ["hatchling", "hatch-vcs"]
+requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build]
@@ -120,6 +120,3 @@ include = [
     "modeltranslation/**/*",
     "README.rst",
 ]
-
-[tool.hatch.version]
-source = "vcs"
